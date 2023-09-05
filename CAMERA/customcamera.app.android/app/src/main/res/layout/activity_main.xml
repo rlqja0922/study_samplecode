@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback2"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainback"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mainTopIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mainTopIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mainTopIcon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mainTopIcon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16"/>
+
+    <ImageView
+        android:id="@+id/img_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/hyperball3"
+        android:scaleType="centerInside"
+        app:layout_constraintLeft_toRightOf="@+id/mainTopIcon"
+        app:layout_constraintRight_toLeftOf="@+id/mainTopIcon2"
+        app:layout_constraintTop_toBottomOf="@+id/mainTopIcon3"
+        app:layout_constraintBottom_toTopOf="@+id/mainTopIcon4"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/carguid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/carguid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42"/>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="@+id/carguid"
+        app:layout_constraintBottom_toBottomOf="@id/carguid2"
+        app:layout_constraintStart_toStartOf="@+id/linguid"
+        app:layout_constraintEnd_toEndOf="@+id/linguid2"
+        android:background="@drawable/maincar"/>
+
+    <TextView
+        android:id="@+id/tv_main_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Hyper AI Vision\n차량인식 서비스"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:lineSpacingExtra="10dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/nanumsquareb"
+        android:gravity="center_horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linguid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linguid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_top"
+        app:layout_constraintStart_toStartOf="@+id/linguid"
+        app:layout_constraintEnd_toEndOf="@+id/linguid2"
+        android:layout_marginTop="13.5dp"
+        android:background="#0077C5"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_main_top2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="인공지능 AI가 번호판을 인식하고 트래킹을 통해\n텍스트를 추출하여 정확한 인식 및\n분석이 가능합니다"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:fontFamily="@font/nanumsquarel"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginTop="38.5dp"/>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btnguid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btnguid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btnguid3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.78"/>
+
+    <ImageButton
+        android:id="@+id/mainbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/btnguid3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/btnguid"
+        app:layout_constraintRight_toRightOf="@id/btnguid2"
+        android:background="@drawable/mainbtn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

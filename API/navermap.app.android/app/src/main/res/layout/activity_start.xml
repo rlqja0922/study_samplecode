@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StartActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/startver1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/startver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/starthor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/starthor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+    <android.support.constraint.Guideline
+        android:id="@+id/starthor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/starthor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+    <Button
+        android:id="@+id/btn_map1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="기본 맵뷰"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/new_blue"
+        app:layout_constraintTop_toBottomOf="@+id/starthor1"
+        app:layout_constraintBottom_toTopOf="@+id/starthor2"
+        app:layout_constraintLeft_toRightOf="@+id/startver1"
+        app:layout_constraintRight_toLeftOf="@+id/startver2"
+        />
+    <Button
+        android:id="@+id/btn_map2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="서치 맵뷰"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/new_blue"
+        app:layout_constraintTop_toBottomOf="@+id/starthor3"
+        app:layout_constraintBottom_toTopOf="@+id/starthor4"
+        app:layout_constraintLeft_toRightOf="@+id/startver1"
+        app:layout_constraintRight_toLeftOf="@+id/startver2"
+        />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9F6BC57272FB18800465B96 /* lea_wrappingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F6BC56272FB18800465B96 /* lea_wrappingApp.swift */; };
+		A9F6BC59272FB18800465B96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F6BC58272FB18800465B96 /* ContentView.swift */; };
+		A9F6BC5B272FB18900465B96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F6BC5A272FB18900465B96 /* Assets.xcassets */; };
+		A9F6BC5E272FB18900465B96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F6BC5D272FB18900465B96 /* Preview Assets.xcassets */; };
+		A9F6BC67272FB2CA00465B96 /* LEA_core.c in Sources */ = {isa = PBXBuildFile; fileRef = A9F6BC66272FB2CA00465B96 /* LEA_core.c */; };
+		A9F6BC6D272FB39E00465B96 /* LEA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9F6BC6B272FB39E00465B96 /* LEA.cpp */; };
+		A9F6BC70272FB46400465B96 /* LEAWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9F6BC6F272FB46400465B96 /* LEAWrapper.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9F6BC53272FB18800465B96 /* lea_wrapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lea_wrapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F6BC56272FB18800465B96 /* lea_wrappingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lea_wrappingApp.swift; sourceTree = "<group>"; };
+		A9F6BC58272FB18800465B96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9F6BC5A272FB18900465B96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9F6BC5D272FB18900465B96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9F6BC64272FB2CA00465B96 /* lea_wrapping-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lea_wrapping-Bridging-Header.h"; sourceTree = "<group>"; };
+		A9F6BC65272FB2CA00465B96 /* LEA_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEA_core.h; sourceTree = "<group>"; };
+		A9F6BC66272FB2CA00465B96 /* LEA_core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LEA_core.c; sourceTree = "<group>"; };
+		A9F6BC6B272FB39E00465B96 /* LEA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LEA.cpp; sourceTree = "<group>"; };
+		A9F6BC6C272FB39E00465B96 /* LEA.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LEA.hpp; sourceTree = "<group>"; };
+		A9F6BC6F272FB46400465B96 /* LEAWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LEAWrapper.mm; sourceTree = "<group>"; };
+		A9F6BC71272FB49000465B96 /* LEAWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEAWrapper.h; sourceTree = "<group>"; };
+		A9F6BC75272FB51C00465B96 /* rot32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rot32.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9F6BC50272FB18800465B96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9F6BC4A272FB18800465B96 = {
+			isa = PBXGroup;
+			children = (
+				A9F6BC55272FB18800465B96 /* lea_wrapping */,
+				A9F6BC54272FB18800465B96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9F6BC54272FB18800465B96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9F6BC53272FB18800465B96 /* lea_wrapping.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9F6BC55272FB18800465B96 /* lea_wrapping */ = {
+			isa = PBXGroup;
+			children = (
+				A9F6BC56272FB18800465B96 /* lea_wrappingApp.swift */,
+				A9F6BC58272FB18800465B96 /* ContentView.swift */,
+				A9F6BC5A272FB18900465B96 /* Assets.xcassets */,
+				A9F6BC5C272FB18900465B96 /* Preview Content */,
+				A9F6BC65272FB2CA00465B96 /* LEA_core.h */,
+				A9F6BC66272FB2CA00465B96 /* LEA_core.c */,
+				A9F6BC64272FB2CA00465B96 /* lea_wrapping-Bridging-Header.h */,
+				A9F6BC6B272FB39E00465B96 /* LEA.cpp */,
+				A9F6BC6C272FB39E00465B96 /* LEA.hpp */,
+				A9F6BC6F272FB46400465B96 /* LEAWrapper.mm */,
+				A9F6BC71272FB49000465B96 /* LEAWrapper.h */,
+				A9F6BC75272FB51C00465B96 /* rot32.h */,
+			);
+			path = lea_wrapping;
+			sourceTree = "<group>";
+		};
+		A9F6BC5C272FB18900465B96 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A9F6BC5D272FB18900465B96 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9F6BC52272FB18800465B96 /* lea_wrapping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9F6BC61272FB18900465B96 /* Build configuration list for PBXNativeTarget "lea_wrapping" */;
+			buildPhases = (
+				A9F6BC4F272FB18800465B96 /* Sources */,
+				A9F6BC50272FB18800465B96 /* Frameworks */,
+				A9F6BC51272FB18800465B96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lea_wrapping;
+			productName = lea_wrapping;
+			productReference = A9F6BC53272FB18800465B96 /* lea_wrapping.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9F6BC4B272FB18800465B96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					A9F6BC52272FB18800465B96 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+				};
+			};
+			buildConfigurationList = A9F6BC4E272FB18800465B96 /* Build configuration list for PBXProject "lea_wrapping" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9F6BC4A272FB18800465B96;
+			productRefGroup = A9F6BC54272FB18800465B96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9F6BC52272FB18800465B96 /* lea_wrapping */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9F6BC51272FB18800465B96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F6BC5E272FB18900465B96 /* Preview Assets.xcassets in Resources */,
+				A9F6BC5B272FB18900465B96 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9F6BC4F272FB18800465B96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F6BC70272FB46400465B96 /* LEAWrapper.mm in Sources */,
+				A9F6BC67272FB2CA00465B96 /* LEA_core.c in Sources */,
+				A9F6BC59272FB18800465B96 /* ContentView.swift in Sources */,
+				A9F6BC6D272FB39E00465B96 /* LEA.cpp in Sources */,
+				A9F6BC57272FB18800465B96 /* lea_wrappingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A9F6BC5F272FB18900465B96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9F6BC60272FB18900465B96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9F6BC62272FB18900465B96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lea_wrapping/Preview Content\"";
+				DEVELOPMENT_TEAM = S67GD4399F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rebornsoft.lea-wrapping";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "lea_wrapping/lea_wrapping-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9F6BC63272FB18900465B96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lea_wrapping/Preview Content\"";
+				DEVELOPMENT_TEAM = S67GD4399F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rebornsoft.lea-wrapping";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "lea_wrapping/lea_wrapping-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9F6BC4E272FB18800465B96 /* Build configuration list for PBXProject "lea_wrapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F6BC5F272FB18900465B96 /* Debug */,
+				A9F6BC60272FB18900465B96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9F6BC61272FB18900465B96 /* Build configuration list for PBXNativeTarget "lea_wrapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F6BC62272FB18900465B96 /* Debug */,
+				A9F6BC63272FB18900465B96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9F6BC4B272FB18800465B96 /* Project object */;
+}

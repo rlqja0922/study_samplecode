@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="card" />
+
+    <Button
+        android:id="@+id/hard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hard" />
+
+    <Button
+        android:id="@+id/nfc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nfc" />
+
+    <Button
+        android:id="@+id/pp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pp 송신" />
+
+    <Button
+        android:id="@+id/pp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pp수신" />
+
+    <Button
+        android:id="@+id/pp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pp송수신" />
+
+    <Button
+        android:id="@+id/pp4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pp4코틀린파일" />
+</LinearLayout>

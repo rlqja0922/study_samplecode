@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ios_share' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # add the Firebase pod for Google Analytics
+  pod 'Firebase/Auth'
+  pod 'Firebase'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Analytics'
+  pod ‘Firebase/AnalyticsWithoutAdIdSupport’
+  pod 'Firebase/DynamicLinks'  
+ # Pods for ios_share
+
+  target 'ios_shareTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ios_shareUITests' do
+    # Pods for testing
+  end
+
+end
+
+target 'share' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for share
+
+end

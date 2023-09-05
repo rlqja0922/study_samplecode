@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintLeft_toRightOf="@+id/guideline3"
+        app:layout_constraintRight_toLeftOf="@+id/guideline4"
+        android:background="@drawable/shapedialog"
+        android:backgroundTint="@color/color_white">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.12"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.88"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.87"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_onwalk"
+            app:layout_constraintTop_toBottomOf="@+id/guideline5"
+            app:layout_constraintLeft_toRightOf="@+id/guideline7"
+            app:layout_constraintRight_toLeftOf="@+id/guideline8"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/guideline7"
+            app:layout_constraintRight_toLeftOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            android:text="@string/splash_center"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_black"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_ip_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@string/editIp"
+            android:textSize="10sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearIp"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <LinearLayout
+            android:id="@+id/linearIp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edit"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_company_code"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ip_port">
+
+            <EditText
+                android:id="@+id/et_IpPort"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hintIp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:inputType="textUri"
+                android:textColorHint="@color/color_gray2"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_company_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="회사 코드"
+            android:textSize="10sp"
+            app:layout_constraintRight_toRightOf="@+id/tv_password"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/linearIp"
+            app:layout_constraintBottom_toTopOf="@+id/linearcompany" />
+
+        <LinearLayout
+            android:id="@+id/linearcompany"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_edit"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_id_num"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@id/tv_company_code">
+            <EditText
+                android:id="@+id/et_CompanyCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="회사 코드를 입력하세요"
+                android:inputType="textAutoCorrect"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingLeft="1dp"
+                android:textColorHint="@color/color_gray2"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_id_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/editEmployee"
+            android:textSize="10sp"
+            app:layout_constraintRight_toRightOf="@+id/tv_password"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/linearcompany"
+            app:layout_constraintBottom_toTopOf="@+id/linear_login"/>
+
+        <LinearLayout
+            android:id="@+id/linear_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_edit"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_password"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@id/tv_id_num">
+
+
+            <EditText
+                android:id="@+id/et_IdNum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/hintEmployee"
+                android:inputType="textAutoCorrect"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingLeft="1dp"
+                android:textColorHint="@color/color_gray2"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/editPw"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/linear_login"
+            app:layout_constraintBottom_toTopOf="@+id/linearPassword"/>
+
+        <LinearLayout
+            android:id="@+id/linearPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_edit"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@id/tv_password"
+            app:layout_constraintBottom_toTopOf="@+id/lincheck">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/hintPw"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="@color/color_gray2"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lincheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearPassword"
+            app:layout_constraintBottom_toTopOf="@+id/btn_login"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:id="@+id/check_autoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="@+id/tv_autoLogin"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintBottom_toTopOf="@+id/btn_login" />
+
+            <TextView
+                android:id="@+id/tv_autoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/autocheck"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/check_autoLogin"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_black"
+                app:layout_constraintBottom_toTopOf="@+id/btn_login"
+                app:layout_constraintLeft_toRightOf="@+id/check_autoLogin"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edit"
+            android:backgroundTint="@color/new_blue"
+            android:onClick="onClickLogin"
+            android:text="@string/joinlogin"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

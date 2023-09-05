@@ -1,0 +1,24 @@
+PODS:
+  - AlertToast (1.3.0)
+  - CocoaAsyncSocket (7.6.5)
+  - CocoaMQTT (1.2.5):
+    - CocoaAsyncSocket (~> 7.6.3)
+
+DEPENDENCIES:
+  - AlertToast
+  - CocoaMQTT
+
+SPEC REPOS:
+  trunk:
+    - AlertToast
+    - CocoaAsyncSocket
+    - CocoaMQTT
+
+SPEC CHECKSUMS:
+  AlertToast: e5598c9f0e0e049b7b5b0d434cd75ee7150ca11c
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CocoaMQTT: a61490ed3b328011c5d75169a77781983e2bb221
+
+PODFILE CHECKSUM: 585caf24b6becd848ebe41761a7fb6aed480be25
+
+COCOAPODS: 1.10.2

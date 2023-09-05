@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.13"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.26"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.90"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.92"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.96"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.67"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.048"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/surface13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.948"/>
+
+        <SurfaceView
+            android:id="@+id/camera_preview_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/surface5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cambtn3"
+            app:fabSize="normal"
+            android:visibility="visible"
+            android:backgroundTint="@color/color_gray3"
+            app:layout_constraintTop_toBottomOf="@+id/surface6"
+            app:layout_constraintBottom_toTopOf="@+id/surface9"
+            app:layout_constraintLeft_toRightOf="@+id/surface3"
+            app:layout_constraintRight_toLeftOf="@+id/surface4"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/camback1"
+            app:layout_constraintBottom_toTopOf="@+id/surface8"
+            app:layout_constraintTop_toBottomOf="@+id/surface7"
+            app:layout_constraintRight_toLeftOf="@+id/surface2"
+            app:layout_constraintLeft_toRightOf="@+id/surface1"
+            />
+
+        <ImageView
+            android:id="@+id/img_guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/guideline2"
+            app:layout_constraintBottom_toTopOf="@+id/surface11"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/surface12"
+            app:layout_constraintRight_toLeftOf="@+id/surface13"
+            app:layout_constraintTop_toBottomOf="@+id/surface10"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <FrameLayout
+            android:id="@+id/sampleview"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/surface11"
+            app:layout_constraintLeft_toLeftOf="@+id/surface12"
+            app:layout_constraintRight_toRightOf="@+id/surface13"
+            app:layout_constraintTop_toTopOf="@+id/surface10">
+
+            <ImageView
+                android:id="@+id/example"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/example"/>
+
+            <ImageButton
+                android:id="@+id/viewclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="#00ff0000"
+                android:src="@android:drawable/btn_dialog" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape"
+            app:layout_constraintLeft_toRightOf="@+id/surface12"
+            app:layout_constraintRight_toLeftOf="@+id/surface13"
+            app:layout_constraintTop_toBottomOf="@+id/surface11"
+            app:layout_constraintBottom_toTopOf="@+id/surface6"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/guidetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message">
+            </TextView>
+            <Button
+                android:id="@+id/btn_sample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="촬영 예시 보기"
+                android:textColor="#0059A4"
+                android:background="#00ff0000">
+            </Button>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

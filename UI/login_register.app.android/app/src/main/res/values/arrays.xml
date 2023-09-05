@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="datas">
+
+        <item >KOREA</item>
+
+        <item >CANADA</item>
+
+        <item >FRANCE</item>
+
+        <item >MEXICO</item>
+
+    </string-array>
+
+
+
+</resources>

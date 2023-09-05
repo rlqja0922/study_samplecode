@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Retrofit2</string>
+    <string name="hintEmployee">사원번호를 입력 해주세요</string>
+    <string name="hintPw">******</string>
+    <string name="editIp">회사 IP/PORT</string>
+    <string name="editPw">비밀번호</string>
+    <string name="editEmployee">사원번호</string>
+    <string name="autocheck">계정 기억하기</string>
+    <string name="joinlogin">로 그 인</string>
+    <string name="hintIp">192.168.0.100:5556</string>
+    <string name="splash_center">쉽고 간편한 출퇴근 관리</string>
+    <string name="di_ti_info">안내</string>
+    <string name="di_ct_error_join_id_pw">정확한 사원번호 및 비밀번호를 확인해주세요.</string>
+    <string name="di_ct_error_join_ip">정확한 IP 주소와 포트번호를 입력 해주세요.</string>
+    <string name="di_ct_error_out">퇴직한 직원</string>
+    <string name="di_ct_error_null">존재하지 않는 직원</string>
+    <string name="dialog_title">GPS 동의</string>
+    <string name="dialog_content">RBS 출퇴근 앱에서 GPS 기능을 켤 수 있도록 허용할까요?</string>
+
+
+<!--    DB 에러 관련 -->
+    <string name="E0000">에러가 발생했습니다. 잠시 뒤 다시 진행해주시기 바랍니다.\n 동일한 오류 발생시 관리자에게 문의하세요.</string>
+    <string name="E0001">서버 DB 에러가 발생했습니다.\n 동일한 오류 발생시 관리자에게 문의하세요.</string>
+    <string name="E0002">입력 값 확인 후 다시 진행해주시기 바랍니다.\n 동일한 오류 발생시 관리자에게 문의하세요.</string>
+    <string name="E9999">예기치않은 에러가 발생했습니다.\n 관리자에게 문의하세요.</string>
+
+</resources>

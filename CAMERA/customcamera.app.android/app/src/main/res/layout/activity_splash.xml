@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".SplashActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splver1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splver3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splver4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splhor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splhor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splhor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splhor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"/>
+
+    <ImageView
+        android:id="@+id/splashball"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/hyperball3"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@+id/splver1"
+        app:layout_constraintRight_toLeftOf="@+id/splver2"
+        app:layout_constraintTop_toBottomOf="@+id/splhor1"
+        app:layout_constraintBottom_toTopOf="@+id/splhor2"/>
+
+    <TextView
+        android:id="@+id/splahText"
+        android:layout_width="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:gravity="center|top"
+        android:text="인공지능 시각인지 기술\nAI 차량인식 서비스"
+        android:lineSpacingExtra="15dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquareb"
+        app:layout_constraintRight_toLeftOf="@+id/splver4"
+        app:layout_constraintLeft_toRightOf="@+id/splver3"
+        app:layout_constraintBottom_toTopOf="@+id/splhor4"
+        app:layout_constraintTop_toBottomOf="@+id/splhor3"
+        android:src="@drawable/hyperball2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

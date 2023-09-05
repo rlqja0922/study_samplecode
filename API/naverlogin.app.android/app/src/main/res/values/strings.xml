@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NaverLogin</string>
+
+    <string name="naver_client_id">JVcunHS2WuJINlRKjp7d</string>
+    <string name="naver_client_secret">Cj179X8G2K</string>
+    <string name="naver_client_name">rebornsamplelogin</string>
+</resources>

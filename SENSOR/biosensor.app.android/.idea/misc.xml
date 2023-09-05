@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/reborn/AndroidStudioProjects/finger/app/src/main/res/drawable/card.xml" value="0.34102564102564104" />
+        <entry key="..\:/Users/reborn/AndroidStudioProjects/finger/app/src/main/res/drawable/ic_fingerprint_success.xml" value="0.34102564102564104" />
+        <entry key="..\:/Users/reborn/AndroidStudioProjects/finger/app/src/main/res/layout/activity_main.xml" value="0.1693840579710145" />
+        <entry key="..\:/Users/reborn/AndroidStudioProjects/finger/app/src/main/res/layout/fingerprint_dialog_container.xml" value="0.16084093211752787" />
+        <entry key="..\:/Users/reborn/AndroidStudioProjects/finger/app/src/main/res/layout/fingerprint_dialog_content.xml" value="0.16058763931104356" />
+        <entry key="..\:/Users/reborn/AndroidStudioProjects/finger/app/src/main/res/menu/menu_main.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/reborn/AndroidStudioProjects/finger/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196875" />
+        <entry key="..\:/Users/reborn/AndroidStudioProjects/finger/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.196875" />
+        <entry key="..\:/Users/reborn/AndroidStudioProjects/finger/app/src/main/res/xml/preferences.xml" value="0.16058763931104356" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

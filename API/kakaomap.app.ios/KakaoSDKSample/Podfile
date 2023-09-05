@@ -1,0 +1,17 @@
+platform :ios, '11.0'
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'KakaoSDKSample' do    
+
+  pod 'KakaoSDKCommon', '~> 2.8.2'
+  pod 'KakaoSDKAuth', '~> 2.8.2'
+  pod 'KakaoSDKUser', '~> 2.8.2'
+  pod 'KakaoSDKStory', '~> 2.8.2'
+  pod 'KakaoSDKTalk', '~> 2.8.2'
+  pod 'KakaoSDKLink', '~> 2.8.2'
+  pod 'KakaoSDKNavi', '~> 2.8.2'
+  pod 'KakaoSDKTemplate', '~> 2.8.2'
+
+end

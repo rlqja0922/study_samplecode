@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/main_btn3" />
+
+    <item>
+
+        <shape>
+
+            <corners android:radius="5dp"/>
+        </shape>
+
+    </item>
+    <item android:drawable="@drawable/main_btntext1"/>
+
+</layer-list>
+

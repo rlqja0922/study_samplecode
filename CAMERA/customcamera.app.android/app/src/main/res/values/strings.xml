@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hyper AI Vision Ⅱ </string>
+    <string name="tfe_od_app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]">On Walk</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="E0000">에러가 발생했습니다. 잠시 뒤 다시 진행해주시기 바랍니다.\n 동일한 오류 발생시 관리자에게 문의하세요.</string>
+    <string name="E0001">서버 DB 에러가 발생했습니다.\n 동일한 오류 발생시 관리자에게 문의하세요.</string>
+    <string name="E0002">입력 값 확인 후 다시 진행해주시기 바랍니다.\n 동일한 오류 발생시 관리자에게 문의하세요.</string>
+    <string name="E9999">예기치않은 에러가 발생했습니다.\n 관리자에게 문의하세요.</string>
+    <string name="message"> \n  ⦁ 차량의 정면을 촬영해 주세요.
+        \n ⦁ 차량이 가이드 라인을 벗어나지 않게 촬영해 주세요.
+        \n ⦁ 번호판이 최대한 크고 잘 보이게 촬영해 주세요.</string>
+    <string name="di_ct_error">에러가 발생했습니다. 잠시 뒤 다시 진행해 주시기 바랍니다.</string>
+</resources>

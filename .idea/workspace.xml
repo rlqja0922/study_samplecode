@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca6e1213-867e-483b-92ec-0e44f621d34b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/UI/ios_ui.app.ios/ui.xcworkspace/xcuserdata/reborn.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/UI/ios_ui.app.ios/ui.xcworkspace/xcuserdata/reborn.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/ios_ui.app.ios/ui.xcworkspace/xcuserdata/reborn.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/UI/ios_ui.app.ios/ui.xcworkspace/xcuserdata/reborn.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="20cG1TSf5L7crQPrWAedvi8xG2u" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca6e1213-867e-483b-92ec-0e44f621d34b" name="Default Changelist" comment="" />
+      <created>1636336260192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636336260192</updated>
+    </task>
+    <servers />
+  </component>
+</project>

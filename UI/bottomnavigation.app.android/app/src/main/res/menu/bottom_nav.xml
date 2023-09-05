@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:enabled="true"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/plus"
+        android:icon="@drawable/plus"
+        android:enabled="true"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/calendar"
+        android:enabled="true"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/setting"
+        android:enabled="true"
+        android:title="">
+    </item>
+
+</menu>

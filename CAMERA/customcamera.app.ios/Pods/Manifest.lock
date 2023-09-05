@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.3)
+  - FLAnimatedImage (1.0.16)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - FLAnimatedImage
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FLAnimatedImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 87db93f021a99d114bf0ea1315ab8a4483f29972
+
+COCOAPODS: 1.11.0
